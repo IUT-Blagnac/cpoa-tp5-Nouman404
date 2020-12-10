@@ -6,6 +6,7 @@ import java.util.Vector;
  * An abstract class for all Observable subjects
  */
 public abstract class Observable {
+	protected Vector<Observer> observers;
 	/**
 	 * Constructs an Observable object
 	 */
@@ -53,5 +54,4 @@ public abstract class Observable {
 	 */
 	public abstract Object getUpdate();
 
-	protected Vector<Observer> observers;
 }

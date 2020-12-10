@@ -4,6 +4,10 @@ package observer;
  * Represents the name of a course and the number of students taking it.
  */
 public class CourseRecord {
+
+	private String name;
+
+	private int numOfStudents;
 	/**
 	 * Create a CourseRecord object
 	 * 
@@ -55,7 +59,4 @@ public class CourseRecord {
 				+ this.numOfStudents;
 	}
 
-	private String name;
-
-	private int numOfStudents;
 }
