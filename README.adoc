@@ -257,6 +257,7 @@ fix #1.2: Add Pie Chart in nonPattern
 Faites la même chose avec le code `observer.pattern` 
 
 Que pensez-vous de la différence (en terme d'effort de codage et de résultat)?
+C'est plus simple il y a moins de chose à faire. On ne cherche plus l'information.
 
 .ToDo
 ifndef::backend-pdf[.pass:[<i class="fa fa-github"></i>] commit/push]
