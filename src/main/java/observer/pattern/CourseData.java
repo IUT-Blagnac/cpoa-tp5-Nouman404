@@ -32,10 +32,10 @@ public class CourseData extends Observable {
 			if (record.getName().equals(courseRecord.getName())) {
 				alreadyExists = true;
 				JOptionPane
-						.showMessageDialog(
-								null,
-								"Warning: Attempt to add new course with an already existing name",
-								"alert", JOptionPane.ERROR_MESSAGE);
+				.showMessageDialog(
+						null,
+						"Warning: Attempt to add new course with an already existing name",
+						"alert", JOptionPane.ERROR_MESSAGE);
 				i = courseData.size(); // exit the loop
 			}
 		}
@@ -56,11 +56,14 @@ public class CourseData extends Observable {
 		for (int i = 0; i < courseData.size(); i++) {
 			CourseRecord record = courseData.elementAt(i);
 			if (record.getName().equals(subjectName)) {
-				record.setNumOfStudents(numOfStudents);
-				i = courseData.size();
+				if(record.getNumOfStudents()!=numOfStudents) {
+					record.setNumOfStudents(numOfStudents);
+					i = courseData.size();
+					this.notifyObservers();
+				}	
 			}
 		}
-		this.notifyObservers();
+
 	}
 
 	/**

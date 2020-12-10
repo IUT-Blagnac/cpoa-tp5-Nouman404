@@ -45,6 +45,7 @@ public abstract class Observable {
 			Observer observer = observers.elementAt(i);
 			observer.update(this);
 		}
+		System.out.println("notif");
 	}
 
 	/**
