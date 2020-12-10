@@ -11,6 +11,7 @@ import observer.CourseRecord;
  */
 public class CourseData extends Observable {
 
+	private Vector<CourseRecord> courseData;
 	/**
 	 * Constructs a CourseData object
 	 */
@@ -72,5 +73,4 @@ public class CourseData extends Observable {
 		return (Vector<CourseRecord>) courseData.clone();
 	}
 
-	private Vector<CourseRecord> courseData;
 }
