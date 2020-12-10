@@ -42,7 +42,7 @@ public class CourseController extends JPanel implements Observer, ChangeListener
 		this.sliders = new Vector<JSlider>();
 		this.setLayout(new GridBagLayout());
 		this.setBackground(Color.white);
-
+		
 		coursePanel = new JPanel();
 		coursePanel.setBorder(new TitledBorder("Courses"));
 		coursePanel.setLayout(new GridLayout(0, 1));
@@ -158,7 +158,6 @@ public class CourseController extends JPanel implements Observer, ChangeListener
 		JFrame frame = new JFrame("Observer Pattern");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(new GridBagLayout());
-		frame.setResizable(false);
 
 		GridBagConstraints constraints = new GridBagConstraints();
 		constraints.fill = GridBagConstraints.BOTH;
