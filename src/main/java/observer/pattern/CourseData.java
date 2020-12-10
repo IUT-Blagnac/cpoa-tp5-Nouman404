@@ -75,5 +75,4 @@ public class CourseData extends Observable {
 	public Vector<CourseRecord> getUpdate() {
 		return (Vector<CourseRecord>) courseData.clone();
 	}
-
 }
